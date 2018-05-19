@@ -21,7 +21,12 @@ class GameViewController: UIViewController {
     }
 
     @IBAction func showAlert() {
-        print("Hey pulsado el botón")
+        let alert = UIAlertController(title: "Hola mundo", message: "Este es mi juego Aim for that !!", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Genial", style: .default, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true)
     }
     
 }
